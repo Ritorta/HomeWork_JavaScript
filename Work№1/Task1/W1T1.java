@@ -61,26 +61,26 @@ public class W1T1
 {
     public static void main(String[] args) 
     {
-
+        System.out.println(rand());;
+        System.out.println(bit());
+        System.out.println(array_max());
+        System.out.println(array_min());
     }
-    public void name() 
+
+    public static int rand() 
     {
-         int rand = new Random().nextInt(2000 + 1);
+        int rand = new Random().nextInt(2000 + 1);
         int i = rand;
-        System.out.println("Random number: " + i);
-
-       
+        return i;   
     }
-    }
-
-    public void name() 
+    
+    public static int bit(int i) 
     {
-         int n = Integer.highestOneBit(i);
-        System.out.println("Hing bit: " + n);
-        
-        
+        int n = Integer.highestOneBit(i);
+        return n;
+    }    
 
-    public void name() 
+    public static ArrayList<Integer> array_max(int i, int n) 
     {
         int n_max = 0;
         ArrayList<Integer> array1 = new ArrayList<Integer>();
@@ -89,13 +89,10 @@ public class W1T1
             n_max ++;
             array1.add(n_max);
         }
-        System.out.println("Multiples of N: " + array1);
-        
-        
-    }
+        return array1;
     }
 
-    public void name() 
+    public static ArrayList<Integer> array_min(int n, int i) 
     {
         int n_min = 0;
         ArrayList<Integer> array2 = new ArrayList<Integer>();
@@ -104,6 +101,6 @@ public class W1T1
             n_min ++;
             array2.add(n_min);
         }
-        System.out.println("Multiples of N: " + array2);
+        return array2;
     }
 }
