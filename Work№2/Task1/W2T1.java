@@ -1,4 +1,4 @@
-// Work №1 - Task №1
+// Work №2 - Task №1
 
 // Дана строка sql-запроса "select * from students where ". Сформируйте часть WHERE этого запроса, используя StringBuilder. 
 // Данные для фильтрации приведены ниже в виде json-строки.
