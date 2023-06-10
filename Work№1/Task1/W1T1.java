@@ -62,9 +62,9 @@ public class W1T1
     public static void main(String[] args) 
     {
         System.out.println(rand());;
-        System.out.println(bit());
-        System.out.println(array_max());
-        System.out.println(array_min());
+        System.out.println(bit(rand()));
+        System.out.println(array_max(bit(rand()), rand()));
+        System.out.println(array_min(bit(rand()), rand()));
     }
 
     public static int rand() 
