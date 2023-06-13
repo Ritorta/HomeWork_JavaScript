@@ -61,7 +61,11 @@ public class W1T1
 {
     public static void main(String[] args) 
     {
-        System.out.println(rand());;
+        int i = rand();
+        int n = bit(i);
+        ArrayList<Integer> max = array_max(n, i);
+        ArrayList<Integer> min = array_min(n, i);
+        System.out.println(rand());
         System.out.println(bit(rand()));
         System.out.println(array_max(bit(rand()), rand()));
         System.out.println(array_min(bit(rand()), rand()));
