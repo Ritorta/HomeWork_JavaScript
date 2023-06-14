@@ -12,7 +12,7 @@
 
 
 // ------------
-//  Вариант №1 - Пункты реализовать в методе main
+//  Вариант №1 - Пункты реализовать в методе main.
 // ------------
 
 // import java.util.ArrayList;
@@ -51,7 +51,7 @@
 // }
 
 // ------------
-//  Вариант №2 - Пункты реализовать в разных методах
+//  Вариант №2 - Пункты реализовать в разных методах.
 // ------------
 
 import java.util.ArrayList;
@@ -65,10 +65,18 @@ public class W1T1
         int n = bit(i);
         ArrayList<Integer> max = array_max(n, i);
         ArrayList<Integer> min = array_min(n, i);
-        System.out.println(rand());
-        System.out.println(bit(rand()));
-        System.out.println(array_max(bit(rand()), rand()));
-        System.out.println(array_min(bit(rand()), rand()));
+        System.out.println(i);
+        System.out.println(n);
+        System.out.println(max);
+        System.out.println(min);
+
+       // Или такой вывод:
+
+        // System.out.println(rand());
+        // System.out.println(bit(rand()));
+        // System.out.println(array_max(bit(rand()), rand()));
+        // System.out.println(array_min(bit(rand()), rand()));
+
     }
 
     public static int rand() 
@@ -108,3 +116,12 @@ public class W1T1
         return array2;
     }
 }
+
+
+
+
+
+
+
+
+
