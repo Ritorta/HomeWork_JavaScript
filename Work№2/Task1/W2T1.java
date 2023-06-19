@@ -16,12 +16,17 @@
 // Студент Краснов получил 5 по предмету Физика.
 
 // *Сравнить время выполнения замены символа "а" на "А" любой строки содержащей >1000 символов средствами String и StringBuilder.
+
 // *Дана строка: ".3 + 1.56 = " подсчитать результат и добавить к строке.
 
 // ------------
 //  Вариант №1 - Основное задание
 // ------------ 
-
+import java.io.IOException;
+import java.util.Arrays;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -124,7 +129,7 @@ import java.util.Map;
 // }
 
 // ------------
-//  Вариант №2.1 - Дополнительное задание
+//  Вариант №2.1 - Дополнительное задание № 1
 // ------------
 
 public class W2T1
@@ -132,3 +137,59 @@ public class W2T1
 
 
 }
+
+// ------------
+//  Вариант №2.1 - Дополнительное задание № 2
+// ------------
+
+// public class W2T1
+// {
+//     public static void main(String[] args) 
+//     {
+//         String comparison = "a";
+//         long starttime1 = System.currentTimeMillis();
+//         for (int i = 0; i < 1000; i++) 
+//         {
+//             String fihish = comparison.replace("a", "A");
+//             // System.out.println(fihish);
+//         }
+//         long endtime1 = System.currentTimeMillis();
+//         long time1 = endtime1 - starttime1;
+//         System.out.println("String time = " + (endtime1 - starttime1));
+
+//         StringBuilder buld = new StringBuilder("a");
+//         long starttime2 = System.currentTimeMillis();
+//         for (int i = 0; i < 1000; i++) 
+//         {
+//             buld.replace(0, 1, "A");
+//             // System.out.println(buld);
+//         }
+//         long endtime2 = System.currentTimeMillis();
+//         long time2 = endtime2 - starttime2;
+//         System.out.println("StringBuilder time = " + (endtime2 - starttime2));
+        
+//         System.out.println(time1 == time2 ? "String time fast!" : "StringBuilder time fast!");
+    
+//     }
+    
+// }
+
+// ------------
+//  Вариант №2.1 - Дополнительное задание № 3
+// ------------
+
+// public class W2T1
+// {
+//     public static void main(String[] args) 
+//     {
+//         String str1 = ".3 + 1.56 = ";
+//         double num1 = Double.parseDouble(".3f");
+//         double num2 = Double.parseDouble("1.56f");
+//         double resnum = num1 +num2;
+//         String str2 = String.valueOf(resnum);
+//         String resstr = str1 + str2;
+//         System.out.println(resstr);
+    
+
+//     }
+// }
