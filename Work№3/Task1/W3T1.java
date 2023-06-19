@@ -130,9 +130,7 @@ public class W3T1
 
             if(deleven > max)
             {
-
                 max = deleven; 
-                
             }
         }
 
