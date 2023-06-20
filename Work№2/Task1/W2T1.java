@@ -23,6 +23,8 @@
 //  Вариант №1 - Основное задание
 // ------------ 
 import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -30,6 +32,8 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.Map;
+
+// Arrays.toString - Божественная волшебная приписка для принта, только нужна для вывода массивов в JAVA!!!
 
 // public class W2T1
 // {
@@ -134,9 +138,52 @@ import java.util.Map;
 
 public class W2T1
 {
+    public static void main(String[] args)
+    {
+        StringBuilder arraymain = new StringBuilder("[{\"\u0444\u0430\u043C\u0438\u043B\u0438\u044F\":\"\u0418\u0432\u0430\u043D\u043E\u0432\",\"\u043E\u0446\u0435\u043D\u043A\u0430\":\"5\",\"\u043F\u0440\u0435\u0434\u043C\u0435\u0442\":\"\u041C\u0430\u0442\u0435\u043C\u0430\u0442\u0438\u043A\u0430\"},{\"\u0444\u0430\u043C\u0438\u043B\u0438\u044F\":\"\u041F\u0435\u0442\u0440\u043E\u0432\u0430\",\"\u043E\u0446\u0435\u043D\u043A\u0430\":\"4\",\"\u043F\u0440\u0435\u0434\u043C\u0435\u0442\":\"\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u043A\u0430\"},{\"\u0444\u0430\u043C\u0438\u043B\u0438\u044F\":\"\u041A\u0440\u0430\u0441\u043D\u043E\u0432\",\"\u043E\u0446\u0435\u043D\u043A\u0430\":\"5\",\"\u043F\u0440\u0435\u0434\u043C\u0435\u0442\":\"\u0424\u0438\u0437\u0438\u043A\u0430\"}]");
+        String str = arraymain.toString();
+        String str1 = str.replace("{", "");
+        String str2 = str1.replace("}", "");
+        String str3 = str2.replaceAll("\"", "");
+        String str4 = str3.replace("[", "");
+        String str5 = str4.replace("]", "");
 
+        String [] arrayData = str5.split(",");
+        String [] listName = {"Студент ", " получил ", " по предмету "};
 
+        StringBuilder result = new StringBuilder("");
+        for (int i =0; i < arrayData.length; i++) {
+            String[] arrData = arrayData[i].split(":");
+            result.append(listName[i]);
+            result.append(arrData[1]);
+            }
+    }
 }
+
+
+//     public static StringBuilder ln(String arraymain)
+//     {
+//         String str1 = arraymain.replace("{", "");
+//         String str2 = str1.replace("}", "");
+//         String str3 = str2.replaceAll("\"", "");
+//         String str4 = str3.replace("[", "");
+//         String str5 = str4.replace("]", "");
+
+//         String [] arrayData = str5.split(",");
+//         String [] listName = {"Студент ", " получил ", " по предмету "};
+
+//         StringBuilder result = new StringBuilder("");
+//         for (int i =0; i < arrayData.length; i++) {
+//             String[] arrData = arrayData[i].split(":");
+//             result.append(listName[i]);
+//             result.append(arrData[1]);
+//             }
+//         return result;
+//         }
+// }   
+    
+
+
 
 // ------------
 //  Вариант №2.1 - Дополнительное задание № 2
