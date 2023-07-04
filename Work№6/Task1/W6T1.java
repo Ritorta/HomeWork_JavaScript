@@ -11,7 +11,6 @@
 //  Вариант №1 - Основное задание
 // ------------ 
 
-
 import java.util.HashMap;
 
 public class W6T1
@@ -35,7 +34,6 @@ public class W6T1
     private static int gettkey(int num)
     {
         return (Integer)Imed.keySet().toArray()[num];
-
     }
 
     private static String getString()
