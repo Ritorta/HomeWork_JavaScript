@@ -11,6 +11,40 @@
 //  Вариант №1 - Основное задание
 // ------------ 
 
-public class W6T1 {
-    
+
+import java.util.HashMap;
+
+public class W6T1
+{
+    private static HashMap <Integer, Object> Imed = new HashMap<>();
+    private static final Object FIN  = new Object();
+    public static void main(String[] args) throws Exception
+    {
+        add(113);
+        add(222);
+        add(537);
+        add(944);
+        add(550);
+
+        System.out.println(getString());
+
+        System.out.println(gettkey(0));
+        System.out.println(gettkey(4));
+    }
+
+    private static int gettkey(int num)
+    {
+        return (Integer)Imed.keySet().toArray()[num];
+
+    }
+
+    private static String getString()
+    {
+        return Imed.keySet().toString();
+    }
+
+    public static void add(Integer numbers)
+    {
+        Imed.put(numbers, FIN);
+    }
 }
